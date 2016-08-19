@@ -17,10 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor grayColor];
-    
-    
+    self.view.backgroundColor = OtGlobleColor;
 
+    //slef.title = @"我的关注";会连下面按钮的文字一起改变，相当于
+    /*
+     *self.navigationItem.title = @"我的关注";
+     *self.tabBarItem.title = @"我的关注";
+     */
+    self.navigationItem.title = @"我的关注";
+    
+//    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highLightImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+
+}
+
+-(void)friendsClick {
+    OtLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {

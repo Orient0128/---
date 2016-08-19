@@ -20,6 +20,10 @@
 //自定义控件代码
 -(instancetype)initWithFrame:(CGRect)frame {
     if (self == [super initWithFrame:frame]) {
+        //设置tabbar背景图
+        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+        
+        //添加发布按钮
         UIButton *plusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [plusBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [plusBtn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateSelected];
@@ -36,8 +40,10 @@
     CGFloat width = self.width;
     CGFloat height = self.height;
     //设置plusBtn的frame
-    self.plusBtn.width = self.plusBtn.currentBackgroundImage.size.width;
-    self.plusBtn.height = self.plusBtn.currentBackgroundImage.size.height;
+//    self.plusBtn.width = self.plusBtn.currentBackgroundImage.size.width;
+//    self.plusBtn.height = self.plusBtn.currentBackgroundImage.size.height;
+    self.plusBtn.size = self.plusBtn.currentBackgroundImage.size;
+
     self.plusBtn.center = CGPointMake(width / 2, height / 2);
     
     float btnY = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OtNavigationController.h
 //  百思不得姐
 //
 //  Created by Orient on 16/8/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OtNavigationController : UINavigationController
 
 @end
-

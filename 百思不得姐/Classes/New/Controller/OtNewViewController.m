@@ -1,24 +1,32 @@
 //
-//  OtMeViewController.m
+//  OtNewViewController.m
 //  百思不得姐
 //
 //  Created by Orient on 16/8/19.
 //  Copyright © 2016年 Orient. All rights reserved.
 //
 
-#import "OtMeViewController.h"
+#import "OtNewViewController.h"
 
-@interface OtMeViewController ()
+@interface OtNewViewController ()
 
 @end
 
-@implementation OtMeViewController
+@implementation OtNewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = OtGlobleColor;
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highLightImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
+}
 
+-(void)tagClick {
+    
+    OtLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {

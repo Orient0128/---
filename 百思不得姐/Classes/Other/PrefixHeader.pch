@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by Orient on 16/8/19.
+//  Copyright © 2016年 Orient. All rights reserved.
+//
+
+//工程->build setting->Prefix Header,然后在右边添加PCH路径，路径从项目内文件夹开始
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//全局import，共享类
+#import "UIView+OtExtension.h"
+#import "UIBarButtonItem+OtExtension.h"
+
+#ifdef DEBUG///*调试阶段*/
+#define OtLog(...) NSLog(__VA_ARGS__)
+#else/*非调试阶段*/
+#define OtLog(...)
+#endif
+
+#define OtLogFunc OtLog(@"%s",__func__)
+
+#define OtRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define OtGlobleColor OtRGBColor(233,233,233)
+
+#endif /* PrefixHeader_pch */

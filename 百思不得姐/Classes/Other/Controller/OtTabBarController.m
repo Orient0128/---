@@ -8,6 +8,7 @@
 
 #import "OtTabBarController.h"
 #import "OtTabBar.h"
+#import "OtNavigationController.h"
 #import "OtMeViewController.h"
 #import "OtNewViewController.h"
 #import "OtEssenceViewController.h"
@@ -19,24 +20,8 @@
 
 @implementation OtTabBarController
 
-
 //设置全局
 + (void)initialize {
-//
-//    //设置tabbar按钮文字选中颜色
-//    UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];
-//    NSMutableDictionary *att = [NSMutableDictionary dictionary];
-//    att[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-//    att[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-//    
-//    [item setTitleTextAttributes:att forState:UIControlStateNormal];
-
-    
-
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
     
     //通过appearance统一设置所有UITabBarItem文字属性
     //后面带有UI_APPEARANCE_SELECTOR的方法都可以通过appearance对象统一设置
@@ -53,6 +38,13 @@
     [item setTitleTextAttributes:att forState:UIControlStateNormal];
     [item setTitleTextAttributes:selAtt forState:UIControlStateSelected];
     
+
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+   
     
     [self setUpAllChildViewController];
     
@@ -63,6 +55,7 @@
 
 -(void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage title:(NSString *)title {
     
+//    vc.view.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1.0];在这里设置颜色会导致控制器view被提前创建
     vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = image;
@@ -71,7 +64,10 @@
     vc.tabBarItem.selectedImage = selImage;
     
     //包装一个导航控制器，添加导航控制器为tabBarController为子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    OtNavigationController *nav = [[OtNavigationController alloc] initWithRootViewController:vc];
+//改为如下语句，更改所有navigationbar背景图
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+
     [self addChildViewController:nav];
     
 //    [self addChildViewController:vc];
