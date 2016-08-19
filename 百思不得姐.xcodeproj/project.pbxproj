@@ -104,9 +104,9 @@
 				F8F2831F1D668C7D00B573B3 /* AppDelegate.m */,
 				F8F283211D668C7D00B573B3 /* ViewController.h */,
 				F8F283221D668C7D00B573B3 /* ViewController.m */,
-				F8F2831B1D668C7D00B573B3 /* Supporting Files */,
 				F8F284FF1D668DAE00B573B3 /* OtTabBarController.h */,
 				F8F285001D668DAE00B573B3 /* OtTabBarController.m */,
+				F8F2831B1D668C7D00B573B3 /* Supporting Files */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -483,6 +483,7 @@
 				F8F283471D668C7D00B573B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F283481D668C7D00B573B3 /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				F8F2834A1D668C7D00B573B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8F2834B1D668C7D00B573B3 /* Build configuration list for PBXNativeTarget "百思不得姐UITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +501,7 @@
 				F8F2834D1D668C7D00B573B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

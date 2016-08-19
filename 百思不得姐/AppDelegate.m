@@ -20,7 +20,9 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[OtTabBarController alloc] init];
+    OtTabBarController *tabBarController = [[OtTabBarController alloc] init];
+    
+    self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
     
