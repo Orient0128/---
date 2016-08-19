@@ -14,6 +14,12 @@
 		F8F283361D668C7D00B573B3 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F283351D668C7D00B573B3 /* _____Tests.m */; };
 		F8F283411D668C7D00B573B3 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F283401D668C7D00B573B3 /* _____UITests.m */; };
 		F8F285011D668DAE00B573B3 /* OtTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F285001D668DAE00B573B3 /* OtTabBarController.m */; };
+		F8F285041D66B77B00B573B3 /* OtEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F285031D66B77B00B573B3 /* OtEssenceViewController.m */; };
+		F8F285071D66B79F00B573B3 /* OtNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F285061D66B79F00B573B3 /* OtNewViewController.m */; };
+		F8F2850A1D66B7B800B573B3 /* OtFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F285091D66B7B800B573B3 /* OtFriendTrendsViewController.m */; };
+		F8F2850D1D66B7C500B573B3 /* OtMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2850C1D66B7C500B573B3 /* OtMeViewController.m */; };
+		F8F285101D66BBE100B573B3 /* OtTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2850F1D66BBE100B573B3 /* OtTabBar.m */; };
+		F8F285131D66C4C400B573B3 /* UIView+OtExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F285121D66C4C400B573B3 /* UIView+OtExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,19 @@
 		F8F283421D668C7D00B573B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8F284FF1D668DAE00B573B3 /* OtTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtTabBarController.h; sourceTree = "<group>"; };
 		F8F285001D668DAE00B573B3 /* OtTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtTabBarController.m; sourceTree = "<group>"; };
+		F8F285021D66B77B00B573B3 /* OtEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtEssenceViewController.h; sourceTree = "<group>"; };
+		F8F285031D66B77B00B573B3 /* OtEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtEssenceViewController.m; sourceTree = "<group>"; };
+		F8F285051D66B79F00B573B3 /* OtNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtNewViewController.h; sourceTree = "<group>"; };
+		F8F285061D66B79F00B573B3 /* OtNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtNewViewController.m; sourceTree = "<group>"; };
+		F8F285081D66B7B800B573B3 /* OtFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtFriendTrendsViewController.h; sourceTree = "<group>"; };
+		F8F285091D66B7B800B573B3 /* OtFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtFriendTrendsViewController.m; sourceTree = "<group>"; };
+		F8F2850B1D66B7C500B573B3 /* OtMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtMeViewController.h; sourceTree = "<group>"; };
+		F8F2850C1D66B7C500B573B3 /* OtMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtMeViewController.m; sourceTree = "<group>"; };
+		F8F2850E1D66BBE100B573B3 /* OtTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtTabBar.h; sourceTree = "<group>"; };
+		F8F2850F1D66BBE100B573B3 /* OtTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtTabBar.m; sourceTree = "<group>"; };
+		F8F285111D66C4C400B573B3 /* UIView+OtExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OtExtension.h"; sourceTree = "<group>"; };
+		F8F285121D66C4C400B573B3 /* UIView+OtExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OtExtension.m"; sourceTree = "<group>"; };
+		F8F285141D66C59B00B573B3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +119,26 @@
 		F8F2831A1D668C7D00B573B3 /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
+				F8F2831B1D668C7D00B573B3 /* Supporting Files */,
 				F8F2831E1D668C7D00B573B3 /* AppDelegate.h */,
 				F8F2831F1D668C7D00B573B3 /* AppDelegate.m */,
+				F8F285111D66C4C400B573B3 /* UIView+OtExtension.h */,
+				F8F285121D66C4C400B573B3 /* UIView+OtExtension.m */,
 				F8F283211D668C7D00B573B3 /* ViewController.h */,
 				F8F283221D668C7D00B573B3 /* ViewController.m */,
 				F8F284FF1D668DAE00B573B3 /* OtTabBarController.h */,
 				F8F285001D668DAE00B573B3 /* OtTabBarController.m */,
-				F8F2831B1D668C7D00B573B3 /* Supporting Files */,
+				F8F2850E1D66BBE100B573B3 /* OtTabBar.h */,
+				F8F2850F1D66BBE100B573B3 /* OtTabBar.m */,
+				F8F285051D66B79F00B573B3 /* OtNewViewController.h */,
+				F8F285061D66B79F00B573B3 /* OtNewViewController.m */,
+				F8F285081D66B7B800B573B3 /* OtFriendTrendsViewController.h */,
+				F8F285091D66B7B800B573B3 /* OtFriendTrendsViewController.m */,
+				F8F2850B1D66B7C500B573B3 /* OtMeViewController.h */,
+				F8F2850C1D66B7C500B573B3 /* OtMeViewController.m */,
+				F8F285021D66B77B00B573B3 /* OtEssenceViewController.h */,
+				F8F285031D66B77B00B573B3 /* OtEssenceViewController.m */,
+				F8F285141D66C59B00B573B3 /* PrefixHeader.pch */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -271,10 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F285071D66B79F00B573B3 /* OtNewViewController.m in Sources */,
 				F8F283231D668C7D00B573B3 /* ViewController.m in Sources */,
+				F8F2850A1D66B7B800B573B3 /* OtFriendTrendsViewController.m in Sources */,
+				F8F2850D1D66B7C500B573B3 /* OtMeViewController.m in Sources */,
+				F8F285101D66BBE100B573B3 /* OtTabBar.m in Sources */,
 				F8F283201D668C7D00B573B3 /* AppDelegate.m in Sources */,
 				F8F285011D668DAE00B573B3 /* OtTabBarController.m in Sources */,
+				F8F285041D66B77B00B573B3 /* OtEssenceViewController.m in Sources */,
 				F8F2831D1D668C7D00B573B3 /* main.m in Sources */,
+				F8F285131D66C4C400B573B3 /* UIView+OtExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
